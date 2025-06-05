@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<!--the text for the website--> 
+    <center><h1 style="height: 1px; margin-top:0%">Portal Gun</h1></center>
+    
+<div style = "position: absolute; left:60%; top:130px;">
+    
+    <H2>About the portal gun</H2>
+    <p>Aperture Science Handheld Portal Device
+        also known as portal gun long for ASHPD
+        The ASHPD has the ability to manufacture two linked portals at once
+        a blue portal will be manufactured when hitting the first trigger and an orange one hitting the second trigger  When entering a blue portal  one will always come out an orange portal and vice versa. The ASHPD is held with a hand behind the weapon, holding the handle/trigger. The other hand is placed under the cannon. A bar in its glass tube has the color of the last shot portal.
+        </p>
+<!--the images for the website--> 
+</div>
+<div style = "position: absolute; left:0px; top:540px;">
+<img src="https://necaonline.com/wp-content/uploads/2012/02/neca-portal-gun-replica1.jpg" alt="Portal gun" width="417" height="280">
+</div>
+
+<div style = "position: absolute; left:370px; top:640px;">
+<img src="https://t3.ftcdn.net/jpg/03/20/50/42/360_F_320504256_nhNLjkbTD6bJs6ktpBXNdFhUhmk93r5h.jpg" border="0" alt="Laser beam" width="770" height="80">
+</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLa8Vp7ZSsitYadlXQnde6Grc9l5DzkHfx-wXyfG1&s" width="400" height="80">
+        
+<div style = "position: absolute; left:1150px; top:590px;">
+    <img src="https://i.pinimg.com/474x/60/ec/c7/60ecc7294c8000c63b963933a673cf92.jpg" border="0" alt="Portal gun" width="380" height="180">
+    </div>
+<!--button size and color-->
+    <style>
+        .large-button:hover {
+            background-color: #6fd649;
+            color: white;
+            cursor: pointer;
+        }
+        .large-button {
+            padding: 12px 70px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: rgb(20, 20, 255);
+        }
+        .popup  {
+            width: 560px;
+            height: 480px;
+            border-radius: 1px;
+            position:absolute; 
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px; 
+            color: #333;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+        }
+        .open-popup {
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(1);
+        }
+
+
+        .popup button {
+            width: 50%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #6fd649;
+            color: white;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+    <!--button for the website-->    
+<div style="position: absolute; left: 500px; top: 300px;">
+<body>
+    <button class="large-button" type="large-button" onclick="openPopup()"> Buy </button>
+    </body>
+
+            </div>
+<!--popup-->
+<div class="popup" id="popup">
+ <img src="fotos\popup.png" width="560px" height="490px">
+    <button type="button" onclick="closePopup()">OK</button>
+    </div>
+<!--black lines for the website--> 
+    <hr width="100%;" color="black" size="2">
+    <style>
+        .vertical {
+           
+            border-left: 2px solid rgb(25, 25, 25);
+            height: 300px;
+            position: absolute; left:59%; top:123px;
+            
+            
+        }
+    </style>
+    <div class= "vertical"></div>
+<script>
+let popup = document.getElementById("popup")
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+
+
+    </script>
+</body>
+</head>
+</html>
