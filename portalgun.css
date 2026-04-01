@@ -1,0 +1,134 @@
+.large-button:hover {
+    background-color: #6fd649;
+    color: white;
+    cursor: pointer;
+}
+
+.large-button {
+    padding: 12px 70px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(20, 20, 255);
+}
+
+.popup {
+    width: 560px;
+    height: 480px;
+    border-radius: 1px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button {
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo img {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.section {
+    width: 100%;
+}
+
+.top-line {
+    border: none;
+    border-top: 2px solid black;
+    margin: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 59% 2px 41%;
+    align-items: stretch;
+    width: 100%;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical {
+    background-color: black;
+    width: 2px;
+}
+
+.text {
+    padding: 20px;
+    max-width: 500px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.portalgun img{
+    width: 417px;
+    height: 280px;
+}
+
+.portal img{
+    width: 380px;
+    height: 180px;
+}
+
+.beam img{
+    width: 770px;
+    height: 80px;
+}
+
+@media (max-width: 768px) {
+    .portalgun img {
+        width: 120px;
+        height: auto;
+    }
+
+    .beam img {
+        width: 140px;
+        height: auto;
+    }
+
+    .portal img {
+        width: 100px;
+        height: auto;
+    }
+
+    .images {
+        gap: 5px;
+    }
+}
