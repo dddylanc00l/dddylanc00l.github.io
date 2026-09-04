@@ -1,0 +1,59 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #dff3ff;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    cursor: crosshair;
+}
+
+.info {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    padding: 12px 18px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+
+    user-select: none;
+}
+
+.info h2 {
+    margin: 0 0 5px;
+}
+
+.info p {
+    margin: 0 0 8px;
+}
+
+button {
+    padding: 7px 14px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+

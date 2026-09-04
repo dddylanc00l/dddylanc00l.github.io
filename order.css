@@ -1,0 +1,19 @@
+.my-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.my-form input,
+.my-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;    
+}
